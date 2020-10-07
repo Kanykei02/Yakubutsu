@@ -1,0 +1,64 @@
+var get_product_cont, get_product_price, result_price;
+
+get_product_cont  = $(".cart_count span:nth-child(2)").text();
+get_product_price = $(".block_price .cena_za_odin").text();
+
+result_price = get_product_price * get_product_cont;
+
+$(".block_price sup").text(' итого:'+result_price);
+
+
+
+$("a.add_to_cart").click(function(){
+	if($(".products_color .list_option > li").hasClass("active")) {
+     
+     $(".products_color .list_option").css({'border' : '1px solid transparent'});
+
+     }  else {
+       $(".products_color .list_option").css({'border' : '1px solid red'});
+      
+      }
+
+});
+
+$("a.add_to_cart").click(function(){
+	if($(".products_size .list_option > li").hasClass("active")) {
+     
+     $(".products_size .list_option").css({'border' : '1px solid transparent'});
+
+     }  else {
+       $(".products_size .list_option").css({'border' : '1px solid red'});
+      
+      }
+
+});
+
+Медиа запросы
+
+Синтаксис 1
+@media all and (orientation: landscape), all and (max-width: 480px) { 
+
+  @media - это объявление того, что далее будет следовать мобильная адаптация
+  all    - это обозначает для всех устройств и размеров которые:
+  and    - это связующее звено между параметрами
+
+  (orientation: landscape) - это ориентация смартфона 1) Вертикальное положение (portrait) и 2) Горизонтальное положение (landscape)
+  max-width - это означает что стиль будет применен для всех до этого значения который указан в рамках max-width
+  min-width - это означает что стиль будет применен для всех от этого значения который указан в рамках min-width
+
+  .slider_block{
+      display: none;
+
+  }
+
+
+Синтаксис 2
+ @media (max-width: 480px) {
+    .slider_block{
+      display: none;
+    }
+  
+}
+
+
+ }

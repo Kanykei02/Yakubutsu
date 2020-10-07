@@ -1,0 +1,44 @@
+//Count + -
+
+      /*$( ".count_product  .js_plus" ).click(function(){ 
+  
+           let current_count, new_count;
+
+           current_count = $(".count_product .js_number").val();
+           
+           new_count = +current_count+1; 
+           
+           $(".count_product .js_number").val(new_count)      
+
+      });
+
+      $( ".count_product  .js_minus" ).click(function(){ 
+  
+           let current_count, new_count;
+
+           current_count = $(".count_product .js_number").val();
+           
+           new_count = +current_count-1; 
+           
+           $(".count_product .js_number").val(new_count)      
+
+      });*/
+
+      // Lesson 25
+    // Color & part
+     // $( "ul.list_option > li" ).click(function(){ 
+      
+     //     console.log($(this).children("span").children("span").text());
+     //   }); 
+
+     // $( "a.add_to_cart" ).click(function(){ 
+     //     console.log($("h1.ttl.def_color_txt").text());
+     //     console.log($(".products_color ul.list_option li.active span > span").text());
+     //     console.log($(".products_size ul.list_option li.active span > span").text());
+     //      console.log($(".count_product .js_number").val());
+     //      console.log($(".product_cont div:first-child > img ").attr("src"));
+     //    
+     //  }); 
+
+     // img_src = $(this).parent(".product_btns").parent(".product_cont").children("a").children(".block_img").children("img").attr('src');
+    // img_src = $(this).parent(".product_btns").parent(".product_cont").children("a").children(".bs_picture").children("img").attr('src');

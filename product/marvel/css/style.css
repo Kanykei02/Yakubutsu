@@ -1,0 +1,668 @@
+/*Main*/
+  i, a, span, li, b {color: #4c4b6c}*/
+/*Standarts*/
+   .b-r {
+      border-right: 1px solid grey
+   }
+   .t-r {text-align: right}
+   .dnone {display: none}
+   .f-b {font-weight: bold}
+   .def_color_txt {color: #4c4b6c}
+   .cl_both {clear: both}
+   ul {list-style: none;padding: 0; display: inline-block;}
+   .color_grey {color: grey}
+   .active_dots {list-style: inside}
+   .active {display: block!important}
+/*Standarts*/
+
+/*Header*/
+  /*Top*/
+   .bg_gray {
+      width: 100%;
+      background: #f8f9fa;
+      display: inline-block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 15px;
+    }
+
+    .get_arrow:after {
+        content: "›";
+        transform: rotate(90deg);
+        position: absolute;
+        right: 5px;
+        bottom: 0px;
+    }
+
+    sup.count_gifts {
+       background: red;
+       border-radius: 50px;
+       width: 12px;
+       height: 12px;
+       display: inline-block;
+       position: absolute;
+       right: 0;
+       top: -4px;
+       line-height: 1.5;
+       color: white;
+       font-size: 8px;
+      text-align: center;
+}
+
+span.block_podarki {
+    position: relative;
+}
+
+.col-3 {
+    list-style: none;
+}
+/*Middle*/
+
+.menu_desc .desc_pravaya {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.menu_desc .desc_levaya {
+  float: left;
+  background: #f4f4f4;
+  padding: 13px;
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+  line-height: 0;
+}
+
+.menu_desc .desc_pravaya p {
+    margin-bottom: 0;
+}
+
+.logo img {
+    width: 266px;
+    height: 205px;
+    border-radius: 100px;
+}
+
+/*Bottom*/
+.search_form input[type="search"] {
+    width: 300px;
+    border-radius: 20px;
+}
+.search_form button {
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    background: white;
+    border: 1px solid #ced4da;
+    width: 53px;
+}
+
+.search_form {
+    position: relative;
+}
+
+.search_form button i {
+    color: black;
+}
+
+.search_form button:hover {
+    background: #4c4b6c;
+    border: 1px solid #ced4da;
+}
+
+.search_form button:hover i {
+    color: white;
+}
+
+.icon_card {
+    padding: 5px;
+    background: #fc3;
+    color: white;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 1.8;
+    float: left;
+    margin-top: 3px;
+}
+
+.cart_open i {
+    color: white;
+}
+
+.korzina_kolichestvo {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.korzina_kolichestvo p {
+    margin-bottom: 0;
+}
+
+.korzina_kolichestvo > p:first-child {
+    font-size: 15px;
+    font-weight: bold;
+    color: #4c4b6c;
+}
+
+.korzina_kolichestvo span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cart .dropdown-toggle::after {
+    display: none;
+}
+
+.cart .dropdown-menu {
+    left: -45px;
+} 
+
+.dropdown-menu {
+    top: 50px;
+}
+
+ul.block_photo li {
+    float: left;
+    width: 50%;
+    padding: 7px;
+}
+
+
+ul.block_photo li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ul.block_photo {
+    padding: 0;
+}
+
+ul.block_photo {
+    list-style: none;
+}
+
+ul.block_photo img:hover {
+    box-shadow: 0px 5px 20px -5px black;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+ul.block_photo img {
+  transition: .5s;
+}
+
+.ttl {
+    font-size: 25px;
+}
+
+.review {
+    font-size: 13px;
+}
+
+.review img {
+    height: 13px;
+}
+
+.mini_desc {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/**/
+
+ul.list_option {
+    padding: 0;
+    list-style: none;
+}
+
+ul.list_option span {
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: inline-block;
+    /*margin: 1px;*/
+}
+
+ul.list_option li {
+    float: left;
+    margin: 5px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    height: 29px;
+    padding: 1px;
+    transition: .5s;
+}
+
+.list_option li:first-child {
+    margin-left: 0;
+}
+
+.beriza {
+    background: #8bccca;
+}
+
+.jeltyi {
+    background: #fdc140;
+}
+
+.sinii {
+    background: #8dcff4;
+}
+
+.rozovyi {
+    background: #f69fbc;
+}
+
+.zelenyi {
+    background: #a8d58d;
+}
+
+.products_color p.def_color_txt {
+    font-weight: bold;
+}
+
+ul.list_option li:hover,
+ul.list_option li.active {
+    border: 1px solid #777777;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.products_size {
+    clear: both;
+}
+
+.products_size 
+ .list_option li {
+    text-align: center;
+}
+
+.products_size .list_option span {
+    background: #e6dfe7;
+    width: 36px;
+    transition: .5s;
+}
+
+.products_size .list_option li span:hover,
+.products_size .list_option li.active span {
+    background: #4c4b6c;
+    color: white;
+    transition: .5s;
+}
+
+/*Lesson 22*/
+.count_product button {
+  border: none;
+  background: transparent;
+}
+
+input.js_number {
+  width: 65px;
+  height: 40px;
+  text-align: center;
+  background: #f4f4f4;
+  border: none;
+  border-right: 1px dashed white;
+  border-left: 1px dashed white;
+}
+
+.count_product {
+  background: #f4f4f4;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.product_btns a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 2.5;
+  background: #f4f4f4;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.logo1 img {
+    width: 266px;
+    height: 205px;
+    border-radius: 100px;
+    margin-top: -23px;
+}
+
+.dropdown-menu ul li {
+    padding-left: 15px;
+}
+
+.block_photo li img {
+    width: 304px;
+    height: 396px;
+    border-radius: 10px;
+}
+
+ul.head_tabs li {
+    float: left;
+    margin: 5px 15px;
+    font-size: 19px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+    color: gray;
+    cursor: pointer;
+}
+
+ul.head_tabs li.active, ul.head_tabs li:hover {
+    border-bottom: 2px solid #4c4b6c;
+    transition: .5s;
+    color: #4c4b6c;
+    cursor: pointer;
+}
+
+ul.head_tabs li:first-child {
+    margin-left: 0;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.comment textarea, .comment input {
+    border: 1px solid #e6e6e6;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+.comment input {
+    height: 40px;
+    width: 210px;
+}
+
+p.bl2 {
+    font-style: italic;
+}
+
+p.bl3 {
+    background: #f4f4f4;
+    font-style: italic;
+    color: #4c4b6c;
+    font-weight: bold;
+    height: 120px;
+    text-align: center;
+    padding-top: 22px;
+}
+
+.nxt_prev {
+    font-size: 40px;
+}
+
+ul.btn_prev li {
+    float: left;
+}
+
+ul.btn_prev p, .tlt_product {
+    padding: 0 15px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #4c4b6c;
+}
+
+ul.btn_prev p + p, .date_publish {
+    font-weight: normal;
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+}
+
+ul.btn_prev:hover i, .nxt_btn:hover i {
+    color: #76dbf5;
+    transition: .5s;
+}
+
+ul.btn_prev i, .nxt_btn i {
+   transition: .5s; 
+   cursor: pointer;
+}
+
+
+/*Slider btns*/
+.slick-prev:before, .slick-next:before {
+    color: #4c4b6c!important;
+    font-size: 35px!important;
+    opacity: 1!important;
+}
+
+button.slick-prev.slick-arrow {
+    position: absolute;
+    right: 60px;
+    top: 0;
+    left: auto;
+}
+
+button.slick-next.slick-arrow,
+button.slick-prev.slick-arrow {
+    top: -40px;
+  }
+
+button.slick-next.slick-arrow {
+  right: 23px;
+}
+
+.txt_witcher {
+    font-size: 40px;
+    color: #4c4b6c;
+}
+
+.mt-5.block_wtch {
+    background: #efefef;
+    padding: 30px 0;
+}
+
+span.lbl_title {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+}
+
+span.blue {
+    background: #ae0a12;
+}
+
+.product_cont {
+    position: relative;
+}
+
+p.ttl {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+span.originalnaya_cena {
+  font-size: 20px;
+}
+
+span.staraya_cena {
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.data_tabs > div, 
+.products_color ul.list_option span > span {display: none;}
+
+.product_btns a:hover {
+    background: #76dbf5;
+    transition: .5s;
+}
+
+.kartinka_tovara img {
+    width: 85px;
+    height: 85px;
+}
+
+.data_cart.dropdown-menu.show {
+    width: 300px;
+    left: auto;
+    right: -100px;
+}
+
+.dannye_tovarov {
+    display: flex!important;
+    margin: 0 8px;
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
+    clear: both;
+    padding-bottom: 8px;
+    padding-top: 8px;
+     width: 94%; 
+}
+
+.kartinka_tovara {
+    float: left;
+}
+
+.opisanie_tovara p {
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.opisanie_tovara span.originalnaya_cena {
+    font-size: 18px;
+}
+
+.opisanie_tovara span.staraya_cena {
+    font-size: 16px;
+}
+
+.opisanie_tovara {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+p.cart_color_size span {
+    color: #8e8e8e;
+    font-weight: normal;
+}
+
+.udalit_zakaz {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.listing_zakazov .dannye_tovarov:first-child {
+    padding-top: 0px;
+}
+
+.itogovaya_cena {
+    font-size: 19px;
+}
+
+.itogovaya_cena span:first-child {
+    float: left;
+}
+
+.itogovaya_cena:nth-child(2) {
+    text-align: right;
+}
+
+.itogovaya_cena {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 8px;
+}
+
+.checkout {
+    display: inline-block;
+    width: 100%;
+    padding: 0 8px;
+    margin: 12px 0 0;
+}
+
+.checkout a {
+    width: 100%;
+    background: #4c4b6c;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    border: 1px dashed white;
+    border-radius: 50px;
+    transition: .5s;
+    display: block;
+    text-align: center;
+}
+
+.checkout a:hover {
+    background: #4c4b6ca6;
+    transition: .5s;
+}
+
+p.cart_count {
+    font-weight: normal;
+}
+
+.listing_zakazov span.cart_ttl {
+    text-align: center;
+    margin-bottom: 25px;
+    display: block;
+}
+
+/*.products_size ul.list_option, 
+.products_color ul.list_option {
+    border: 1px solid red;
+}*/
+
+.products_size ul.list_option, 
+.products_color ul.list_option {
+    border: 1px solid transparent;
+}
+
+.block_img img.bite {
+    width: 215px;
+}
+
+.list_of_language1,
+.list_of_currencies1 {
+    z-index: 9;
+}
+
+.list_of_language1,
+.list_of_currencies1 {
+    background: #f8f9fa;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 140px;
+    box-shadow: 0px 1px 3px 1px #1f1d1d;
+}
+
+.list_of_language1 li {
+    padding-right: 30px;
+    padding-left: 26px;
+}
+
+.list_of_currencies1 li {
+    padding-right: 63px;
+    padding-left: 27px;
+}
+
+.list_of_language1 li:hover,
+.list_of_currencies1 li:hover {
+    background: #e8ebef;
+}
